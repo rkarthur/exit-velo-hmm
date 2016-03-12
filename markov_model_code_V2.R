@@ -22,5 +22,5 @@ sd=c(10, 15)))
 
 ##plot the sequence of states
 ##with a LOESS trendline
-scatter.smooth(Viterbi(z))
+scatter.smooth(Viterbi(mod))
 
