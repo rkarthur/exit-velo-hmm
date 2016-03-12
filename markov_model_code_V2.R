@@ -16,8 +16,8 @@ delta=c(.5,.5)
 ##run the model
 ##initializes the states as the 25th and 75th percentiles
 mod <- dthmm(test$ExitVelo, Pi, delta, distn="norm",
-list(mean=c(as.vector(quantile(test$diff, probs=.25)), 
-as.vector(quantile(test$diff, probs=.75))), 
+list(mean=c(as.vector(quantile(test$ExitVelo, probs=.25)), 
+as.vector(quantile(test$ExitVelo, probs=.75))), 
 sd=c(10, 15)))
 
 ##plot the sequence of states
