@@ -10,7 +10,7 @@ test <- read.csv("CGonzalez_example.csv")
 ##sets transition probabilities at .5 each
 Pi <- matrix(c(1/2, 1/2,
 1/2, 1/2), byrow=TRUE, nrow=2)
-##sets probability of "hot" state as .5
+##sets initial probability of "hot" state as .5
 delta=c(.5,.5)
 
 ##run the model
