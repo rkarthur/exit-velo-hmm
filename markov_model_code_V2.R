@@ -20,7 +20,10 @@ list(mean=c(as.vector(quantile(test$ExitVelo, probs=.25)),
 as.vector(quantile(test$ExitVelo, probs=.75))), 
 sd=c(10, 15)))
 
+##fit the model
+z <- BaumWelch(mod)
+
 ##plot the sequence of states
 ##with a LOESS trendline
-scatter.smooth(Viterbi(mod))
+scatter.smooth(Viterbi(z))
 
